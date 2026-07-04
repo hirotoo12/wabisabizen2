@@ -144,6 +144,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ja">
       <head>
+    <meta name="google-site-verification" content="Rjdz44-eCYFJqzEIMFKgIWGBDRdqVCS48Jy4cX8ikqo" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
