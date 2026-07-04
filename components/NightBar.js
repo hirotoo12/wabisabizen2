@@ -24,6 +24,12 @@ export default function NightBar() {
         ))}
       </div>
 
+      <div
+        className="photo-band photo-band--dark"
+        style={{ backgroundImage: "url('/night.jpg')" }}
+        aria-hidden="true"
+      />
+
       <Reveal className="recommend recommend--dark">
         <span className="recommend__label">こんな方に</span>
         <span className="recommend__text">{night.recommend}</span>

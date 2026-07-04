@@ -168,6 +168,22 @@ img, svg, iframe { display: block; max-width: 100%; }
   overflow: hidden;
   padding: 6rem var(--gutter) 4rem;
 }
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url('/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.55;
+}
+.hero__bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(120% 95% at 50% 30%, rgba(22, 19, 15, 0.35), rgba(22, 19, 15, 0.82) 92%);
+}
 .hero__enso {
   position: absolute;
   top: 50%;
@@ -177,6 +193,7 @@ img, svg, iframe { display: block; max-width: 100%; }
   color: var(--washi-light);
   opacity: 0.14;
   pointer-events: none;
+  z-index: 1;
 }
 .hero__inner { position: relative; z-index: 2; }
 .hero__eyebrow {
@@ -436,6 +453,37 @@ img, svg, iframe { display: block; max-width: 100%; }
   color: var(--ink-50);
 }
 .recommend--dark .recommend__en { color: var(--paper-45); }
+
+/* ---------- 写真バンド（各セクションの帯写真） ------------- */
+.photo-band {
+  margin-top: clamp(2.2rem, 5vw, 3.5rem);
+  height: clamp(210px, 34vw, 360px);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--washi-card);
+  border: 1px solid rgba(33, 30, 26, 0.14);
+}
+.photo-band--dark {
+  border-color: rgba(199, 168, 120, 0.28);
+  background-color: var(--sumi-soft);
+}
+.menu .photo-band,
+.story .photo-band { margin-bottom: 0; }
+.menu__feature { margin-top: clamp(2.2rem, 5vw, 3.2rem); }
+.menu__feature-cap {
+  font-family: var(--font-mincho);
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  color: var(--bengara);
+  margin-bottom: 0.8rem;
+}
+.menu__feature-cap span[lang="en"] {
+  font-size: 0.72rem;
+  color: var(--ink-50);
+  font-style: italic;
+}
+.menu__feature .photo-band { margin-top: 0; }
+.menu__feature + .menu__grid { margin-top: clamp(2.5rem, 6vw, 4rem); }
 
 /* ---------- メニュー：グループ・フレーバー ------------------ */
 .menu__group + .menu__group { margin-top: 1.8rem; }
@@ -812,9 +860,8 @@ img, svg, iframe { display: block; max-width: 100%; }
     justify-content: center;
     gap: 2rem;
     padding: 2rem 2.4rem;
-    background: rgba(22, 19, 15, 1);
     background: #16130f;
-
+    box-shadow: -20px 0 40px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     transform: translateX(100%);
     transition: transform 0.45s cubic-bezier(0.6, 0, 0.2, 1);

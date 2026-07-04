@@ -27,6 +27,12 @@ export default function Story() {
         </Reveal>
       </div>
 
+      <div
+        className="photo-band"
+        style={{ backgroundImage: "url('/story.jpg')" }}
+        aria-hidden="true"
+      />
+
       <div className="story__sig">
         <Reveal className="story__sig-head">
           <p className="section__eyebrow">名物</p>

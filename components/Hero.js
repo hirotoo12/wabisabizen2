@@ -4,6 +4,7 @@ import Enso from "@/components/Enso";
 export default function Hero() {
   return (
     <section className="hero" id="top">
+      <div className="hero__bg" aria-hidden="true" />
       <div className="hero__enso" aria-hidden="true">
         <Enso draw />
       </div>

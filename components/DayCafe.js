@@ -24,6 +24,12 @@ export default function DayCafe() {
         ))}
       </div>
 
+      <div
+        className="photo-band"
+        style={{ backgroundImage: "url('/day.jpg')" }}
+        aria-hidden="true"
+      />
+
       <Reveal className="recommend">
         <span className="recommend__label">こんな方に</span>
         <span className="recommend__text">{day.recommend}</span>

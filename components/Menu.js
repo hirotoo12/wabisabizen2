@@ -64,6 +64,17 @@ export default function Menu() {
         </p>
       </Reveal>
 
+      <Reveal className="menu__feature">
+        <p className="menu__feature-cap">
+          名物 — 団子 <span lang="en">/ Dango</span>
+        </p>
+        <div
+          className="photo-band"
+          style={{ backgroundImage: "url('/dango.jpg')" }}
+          aria-hidden="true"
+        />
+      </Reveal>
+
       <Reveal className="menu__grid" delay={120}>
         <MenuColumn data={site.menu.day} />
         <span className="menu__divider" aria-hidden="true" />

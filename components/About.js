@@ -33,6 +33,12 @@ export default function About() {
           </ul>
         </Reveal>
       </div>
+
+      <div
+        className="photo-band"
+        style={{ backgroundImage: "url('/about.jpg')" }}
+        aria-hidden="true"
+      />
     </section>
   );
 }
