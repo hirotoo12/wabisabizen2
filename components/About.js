@@ -34,11 +34,7 @@ export default function About() {
         </Reveal>
       </div>
 
-      <div
-        className="photo-band"
-        style={{ backgroundImage: "url('/about.jpg')" }}
-        aria-hidden="true"
-      />
+      <img className="photo-band" src="/about.jpg" alt="侘び寂び禅の店内" loading="lazy" />
     </section>
   );
 }

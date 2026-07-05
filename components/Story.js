@@ -27,11 +27,7 @@ export default function Story() {
         </Reveal>
       </div>
 
-      <div
-        className="photo-band"
-        style={{ backgroundImage: "url('/story.jpg')" }}
-        aria-hidden="true"
-      />
+      <img className="photo-band" src="/story.jpg" alt="侘び寂び禅の抹茶" loading="lazy" />
 
       <div className="story__sig">
         <Reveal className="story__sig-head">

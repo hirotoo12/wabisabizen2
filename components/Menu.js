@@ -68,11 +68,7 @@ export default function Menu() {
         <p className="menu__feature-cap">
           名物 — 団子 <span lang="en">/ Dango</span>
         </p>
-        <div
-          className="photo-band"
-          style={{ backgroundImage: "url('/dango.jpg')" }}
-          aria-hidden="true"
-        />
+        <img className="photo-band" src="/dango.jpg" alt="団子" loading="lazy" />
       </Reveal>
 
       <Reveal className="menu__grid" delay={120}>

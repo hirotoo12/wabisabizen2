@@ -455,17 +455,16 @@ img, svg, iframe { display: block; max-width: 100%; }
 .recommend--dark .recommend__en { color: var(--paper-45); }
 
 /* ---------- 写真バンド（各セクションの帯写真） ------------- */
+/* 写真そのままの比率で表示（切らない・余白なし） */
 .photo-band {
+  display: block;
+  width: 100%;
+  height: auto;
   margin-top: clamp(2.2rem, 5vw, 3.5rem);
-  height: clamp(210px, 34vw, 360px);
-  background-size: cover;
-  background-position: center;
-  background-color: var(--washi-card);
   border: 1px solid rgba(33, 30, 26, 0.14);
 }
 .photo-band--dark {
   border-color: rgba(199, 168, 120, 0.28);
-  background-color: var(--sumi-soft);
 }
 .menu .photo-band,
 .story .photo-band { margin-bottom: 0; }
